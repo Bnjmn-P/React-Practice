@@ -78,7 +78,7 @@ a:hover {
 }
 
 .header-contact {
-  text-align: left;
+  text-align: center;
 }
 
 .header-contact p {
@@ -149,5 +149,43 @@ a:hover {
   border-radius: 25px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
+}
+
+#about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#about h1 {
+  font-size: 2.0em;
+  margin-bottom: 10px;
+  color: #07495c;
+}
+
+#about h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#about p {
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#about p:first-child {
+  margin-top: 0;
+}
+
+#about p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  #about {
+    padding: 10px;
+  }
 }
 
