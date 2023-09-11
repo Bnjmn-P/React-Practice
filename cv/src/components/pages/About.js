@@ -1,4 +1,6 @@
 import React from 'react';
+import bean from '../../bean.JPG';
+
 
 const About = () => {
   return (
@@ -9,6 +11,7 @@ const About = () => {
       <p>In the realm of software development, my greatest passion lies in problem-solving. I derive immense satisfaction from the creative process of finding solutions and the ongoing refinement that development demands. Witnessing conceptual ideas transform into functional software with the potential to positively impact users is particularly rewarding.</p>
       <p>Throughout my academic journey, I've actively engaged in group projects employing various agile methodologies and extreme programming. I appreciate the pace, adaptability, and structure these approaches bring to collaborative endeavors. I've also come to understand the importance of sound development practices, including coding standards, thorough documentation, and version control.</p>
       <p>Beyond the world of programming, I'm an enthusiastic football fan who enjoys the outdoors, attending concerts, and indulging in cinematic experiences.</p>
+      <img src={bean} alt="bean" style={{ width: '400px', height: 'auto' }}/>
     </section>
   );
 }
