@@ -1,5 +1,19 @@
 import React from 'react';
 
+const YouTubeVideo = () => {
+  return (
+      <div>
+          <iframe
+              title="Embedded Video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/HSNv1dXBiHs"
+          ></iframe>
+      </div>
+  );
+}
+
+
 const About = () => {
   return (
     <section id="about">
@@ -20,6 +34,8 @@ const About = () => {
 <p>Our team was composed of motivated individuals eager to put in the effort, which I believe was instrumental in our success in this environment. Breaking down the project into manageable increments, such as user stories, establishing clear goals, and adhering to agreed-upon standards, made the project more comprehensible and, consequently, more manageable.</p>
 <p>There were areas where our team could have improved. Initially, in sprint one, our user stories were often inadequately scoped or dependent on others, likely due to our collective inexperience with both the process and Unity development. Even with increased proficiency, we were still navigating the intricacies of a project of this scale. However, this issue was largely rectified in sprint two, as we had gained a much better understanding and were able to reevaluate our user stories. The other area of potential enhancement was in test-driven development. We encountered challenges implementing this practice in Unity, especially as the features grew more complex, making it increasingly challenging to establish tests. While I acknowledge the benefits of testing first, in this project, I felt it was not a necessity</p>
 <p>Through this experience, I gleaned valuable insights into Scrum Agile development and believe it is exceptionally well-suited to software development. It promotes a high degree of collaboration and adaptability. I thoroughly enjoyed my dual role as a developer and Scrum Master and would gladly embrace the opportunity to work in this environment again.</p>
+
+<YouTubeVideo />
 
     </section>
   );
