@@ -14,9 +14,9 @@ const YouTubeVideo = () => {
 }
 
 
-const About = () => {
+const Projects = () => {
   return (
-    <section id="about">
+    <section id="projects">
       <h1>Projects</h1>
       <h2>Research and Development Project</h2>
 <p>As part of my final year at Auckland University of Technology (AUT), I am part of a team tasked with examining how the faculty manages its academic courses. We had two semesters to complete this task. We worked together to figure out our roles and how we'd go about our research. We learned about our clients' needs and presented a plan for how we'd approach the project and what results they could expect.</p>
@@ -41,4 +41,4 @@ const About = () => {
   );
 }
 
-export default About;
+export default Projects;
