@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Skills = () => {
   const skillsList = [
@@ -14,7 +14,7 @@ const Skills = () => {
     "React.js",
     "Adobe XD",
     "Object Oriented Programming",
-    "Agile Methodologies"
+    "Agile Methodologies",
   ];
 
   return (
@@ -29,6 +29,6 @@ const Skills = () => {
       </ul>
     </section>
   );
-}
+};
 
 export default Skills;

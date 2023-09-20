@@ -130,9 +130,28 @@ a:hover {
 }
 
 .collapse-button {
+  justify-content: center;
+margin: auto;
   display: block;
-  width: 100%;
+  width: 20%;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
+
+
+
+
+.collapse-button:hover {background-color: #3e8e41}
+
+
 
 .collapse-content.collapsed {
   display: none;
