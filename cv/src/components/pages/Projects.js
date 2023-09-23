@@ -77,7 +77,7 @@ const Projects = () => {
           better.
         </p>
       </Collapse>
-
+      
       <Collapse collapsed={true} headerName="The Lost Relics">
         {" "}
         {/* Initially collapsed */}
