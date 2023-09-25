@@ -1,191 +1,165 @@
 /* App.css */
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
+  @apply font-sans bg-gray-100 m-0;
 }
 
 a:link {
-  color: rgb(156, 224, 156);
+  @apply text-teal-500 hover:text-teal-600; /* Updated link color and hover effect */
 }
-
-/* visited link */
-a:visited {
-  color: rgb(243, 163, 163);
-}
-
+  
 a:hover {
-  color: hotpink;
+  @apply text-pink-500; /* Keeping hover effect */
 }
 
 .App {
-  text-align: center;
-  padding: 20px;
+  @apply text-center p-20;
 }
 
 .App-header {
-  background-color: #07495c;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-logo {
-  height: 80px;
-  animation: App-logo-spin infinite 20s linear;
-  margin-bottom: 20px;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  @apply bg-gradient-to-b from-blue-800 to-blue-600 min-h-screen flex flex-col items-center justify-center text-white; /* Added gradient background */
+  @apply text-2xl; /* Increased header text size */
 }
 
 /* Header.css */
 
 .header {
-  background-color: #07495c;
-  padding: 20px;
-  text-align: center;
+  @apply bg-blue-800 p-5 text-center;
 }
 
 .header-content {
-  max-width: 600px;
-  margin: 0 auto;
+  @apply max-w-screen-md mx-auto;
 }
 
 .header-title {
-  font-size: 3em;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  color: #f0f0f0;
+  @apply text-4xl mb-2 font-serif text-white; /* Increased title text size */
 }
 
 .header-subtitle {
-  font-size: 1.5em;
-  margin: 5px 0;
-  font-family: 'Roboto', sans-serif;
-  color: #f0f0f0;
-}
-
-.header-contact {
-  text-align: center;
+  @apply text-2xl my-2 font-serif text-white; /* Increased subtitle text size */
 }
 
 .header-contact p {
-  margin: 0;
-  margin-bottom: 5px;
-  font-size: 1em;
-  color: #f0f0f0;
+  @apply mb-2 text-white;
 }
 
 /* Education.css */
 
 .education {
-  margin-top: 20px;
+  @apply mt-5;
 }
 
 .section-title {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #07495c;
+  @apply text-3xl mb-5 text-blue-800; /* Increased section title text size */
 }
 
 .education-item {
-  margin-bottom: 15px;
-  border: 2px solid #07495c;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #fff;
+  @apply mb-8 border-2 border-blue-800 rounded-lg p-4 bg-white shadow-md; /* Added box shadow */
 }
 
 .education-title {
-  font-size: 1.5em;
-  margin: 0;
-  color: #333;
+  @apply text-2xl mb-1 text-gray-800; /* Increased education title text size and adjusted margin */
 }
 
 .education-institution {
-  font-size: 1em;
-  margin: 0;
-  margin-bottom: 5px;
-  color: #555;
+  @apply text-lg mb-2 text-gray-700; /* Increased institution text size */
 }
 
 .education-date {
-  font-size: 1em;
-  margin: 0;
-  color: #555;
+  @apply text-base text-gray-700;
 }
 
 /* Skills.css */
 
 .skills {
-  margin-top: 20px;
+  @apply mt-5;
 }
 
 .skills-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  @apply list-none p-0 m-0;
 }
 
 .skill-item {
-  display: inline-block;
-  background-color: #07495c;
-  color: #fff;
-  font-size: 1em;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 25px;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
+  @apply inline-block bg-blue-800 text-white text-base py-2 px-4 m-1 rounded-full font-serif uppercase;
 }
 
 #about {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+  @apply max-w-screen-lg mx-auto p-5;
 }
 
 #about h1 {
-  font-size: 2.0em;
-  margin-bottom: 10px;
-  color: #07495c;
+  @apply text-3xl mb-3 text-blue-800; /* Increased about section title text size */
 }
 
 #about h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  @apply text-2xl mb-3 text-gray-800; /* Increased about section subtitle text size and adjusted color */
 }
 
 #about p {
-  text-align: left;
-  font-size: 1em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-#about p:first-child {
-  margin-top: 0;
-}
-
-#about p:last-child {
-  margin-bottom: 0;
+  @apply text-lg leading-7 mb-5; /* Adjusted about section paragraph text size and line height */
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
   #about {
-    padding: 10px;
+    @apply p-3; /* Increased padding for smaller screens */
   }
 }
 
+#projects {
+  @apply max-w-screen-lg mx-auto p-5;
+}
+
+#projects h1 {
+  @apply text-3xl mb-3 text-blue-800; /* Increased about section title text size */
+}
+
+#projects h2 {
+  @apply text-2xl mb-3 text-gray-800; /* Increased about section subtitle text size and adjusted color */
+}
+
+#projects p {
+  @apply text-lg leading-7 mb-5; /* Adjusted about section paragraph text size and line height */
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  #projects {
+    @apply p-3; /* Increased padding for smaller screens */
+  }
+}
+
+.collapse-button {
+  justify-content: center;
+margin: auto;
+margin-bottom: 20px;
+  display: block;
+  width: 50%;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.collapse-button:hover {background-color: #3e8e41}
+
+.collapse-content.collapsed {
+  display: none;
+}
+
+.collapsed-content.expanded {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease; /* Add transition property */
+}
+
+.expanded {
+  height: auto; /* Automatically adjust height when expanded */
+}

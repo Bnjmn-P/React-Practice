@@ -1,16 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import Education from '../Education';
-import Skills from '../Skills';
+import Education from "../Education";
+import Skills from "../Skills";
 
 function Home() {
-    return (
-        <section id="home">
-   
-        <Education />
-        <Skills />
-        </section>
-            );
-  }
+  return (
+    <section id="home">
+      <Education />
+      <Skills />
+    </section>
+  );
+}
 
-  export default Home;
+export default Home;
