@@ -131,35 +131,26 @@ a:hover {
 
 .collapse-button {
   justify-content: center;
-margin: auto;
-margin-bottom: 20px;
+  margin: auto;
+  margin-bottom: 20px;
   display: block;
   width: 50%;
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #04AA6D;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #2511db;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #5a5858;
 }
 
-.collapse-button:hover {background-color: #3e8e41}
+.collapse-button:hover {background-color: #150d83}
 
 .collapse-content.collapsed {
   display: none;
 }
 
-.collapsed-content.expanded {
-  display: block;
-  height: 0;
-  overflow: hidden;
-  transition: height 0.3s ease; /* Add transition property */
-}
 
-.expanded {
-  height: auto; /* Automatically adjust height when expanded */
-}
