@@ -139,7 +139,10 @@ const Projects = () => {
         </p>
         <YouTubeVideo />
       </Collapse>
-    </section>
+
+      <Collapse collapsed={true} headerName="Flora Friend">
+        <p>Some infromation about this will go here</p>
+        </Collapse>    </section>
   );
 };
 
