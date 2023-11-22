@@ -18,7 +18,6 @@ const Projects = () => {
   return (
     <section id="projects">
       <h1>Projects</h1>
-
       <Collapse collapsed={true} headerName="Research and Development Project">
         {" "}
         {/* Initially collapsed */}
@@ -77,7 +76,6 @@ const Projects = () => {
           better.
         </p>
       </Collapse>
-      
       <Collapse collapsed={true} headerName="The Lost Relics">
         {" "}
         {/* Initially collapsed */}
@@ -139,10 +137,21 @@ const Projects = () => {
         </p>
         <YouTubeVideo />
       </Collapse>
-
       <Collapse collapsed={true} headerName="Flora Friend">
-        <p>Some infromation about this will go here</p>
-        </Collapse>    </section>
+        <p>
+          This year, I undertook the creation of a WordPress app centered on a
+          fictitious Kickstarter project. The primary goal was to engage
+          potential donors by informing them about the product and motivating
+          their contributions toward meeting the pledge target. I selected a
+          hypothetical product—the smart flower pot—as the focal point and
+          tailored the website's theme and style to reflect a nature-inspired
+          aesthetic. Crafting visuals through Photoshop and incorporating
+          plugins for specific functionalities, I also implemented personal code
+          to customize various elements of the site. Hosting the website, I
+          utilized AWS and facilitated its accessibility via LightSail.{" "}
+        </p>
+      </Collapse>{" "}
+    </section>
   );
 };
 
