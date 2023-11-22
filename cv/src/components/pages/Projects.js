@@ -150,6 +150,13 @@ const Projects = () => {
           to customize various elements of the site. Hosting the website, I
           utilized AWS and facilitated its accessibility via LightSail.{" "}
         </p>
+        <a
+          href="http://3.27.186.231"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Flora Friend
+        </a>
       </Collapse>{" "}
     </section>
   );
