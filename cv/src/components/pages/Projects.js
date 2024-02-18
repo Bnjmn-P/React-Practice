@@ -1,5 +1,6 @@
 import React from "react";
 import Collapse from "../Collapse";
+import "./Projects.css";
 
 const YouTubeVideo = () => {
   return (
@@ -16,7 +17,7 @@ const YouTubeVideo = () => {
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="projects-grid-container">
       <h1>Projects</h1>
       <Collapse collapsed={true} headerName="Research and Development Project">
         {" "}
@@ -56,7 +57,7 @@ const Projects = () => {
           meeting their expectations. Once they were sure we really understood
           the current process, we moved on to figuring out what new features
           they might want. Knowing the system inside out was important here
-          because it helped us figure out what could be improved.{" "}
+          because it helped us figure out what could be improved.
         </p>
         <p>
           Again, we talked to the people involved to get their thoughts, as we
@@ -148,14 +149,32 @@ const Projects = () => {
           aesthetic. Crafting visuals through Photoshop and incorporating
           plugins for specific functionalities, I also implemented personal code
           to customize various elements of the site. Hosting the website, I
-          utilized AWS and facilitated its accessibility via LightSail.{" "}
+          utilized AWS and facilitated its accessibility via LightSail.
+        </p>
+        <a href="http://3.27.186.231" target="_blank" rel="noopener noreferrer">
+          Flora Friend
+        </a>
+      </Collapse>{" "}
+      <Collapse collapsed={true} headerName="Flatties">
+        <p>
+          I'm currently involved in a collaborative software project with two
+          other developers, and we're using the MERN stack (MongoDB, Express.js,
+          React, Node.js) to create a property listing web application. The main
+          goal of this project is to strengthen our front-end and back-end
+          skills. We've adopted agile methodologies and follow extreme
+          programming practices to ensure efficient communication and iterative
+          improvements. For version control, we rely on GitHub, which enables
+          seamless collaboration and code management. This project is a hands-on
+          learning experience, allowing us to apply and refine our skills in a
+          real-world context while building a functional and responsive property
+          listing web app.
         </p>
         <a
-          href="http://3.27.186.231"
+          href="https://github.com/Puddle-Dev/Flatties"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Flora Friend
+          Flatties GitHub
         </a>
       </Collapse>{" "}
     </section>
