@@ -23,7 +23,7 @@ const Skills = () => {
       <ul className="skills-list">
         {skillsList.map((skill, index) => (
           <li key={index} className="skill-item">
-            {skill}
+            <span style={{ fontSize: "1em" }}>{skill}</span>
           </li>
         ))}
       </ul>
