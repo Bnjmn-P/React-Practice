@@ -3,7 +3,7 @@ import "./Projects.css";
 
 const YouTubeVideo = () => {
   return (
-    <div>
+    <div className="video-container">
       <iframe
         title="Embedded Video"
         width="560"
@@ -26,15 +26,15 @@ const Projects = () => {
       <div className="sidebar">
         <button
           className={`collapse-button ${
-            activeCollapse === "Research and Development Project"
+            activeCollapse === "R and D Project"
               ? "active"
               : ""
           }`}
           onClick={() =>
-            handleCollapseToggle("Research and Development Project")
+            handleCollapseToggle("R and D Project")
           }
         >
-          Research and Development Project
+          R and D Project
         </button>
         <button
           className={`collapse-button ${
@@ -62,7 +62,7 @@ const Projects = () => {
         </button>
       </div>
       <div className="content">
-        {activeCollapse === "Research and Development Project" && (
+        {activeCollapse === "R and D Project" && (
           <div>
             <p>
               As part of my final year at Auckland University of Technology
@@ -208,7 +208,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              FF
+              Flora Friends
             </a>
           </div>
         )}
