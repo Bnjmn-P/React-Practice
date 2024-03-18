@@ -19,12 +19,12 @@ const About = () => {
            <div
         style={{
           flex: "1 1 60%", // Take 60% width on smaller screens, allow wrapping
-          maxWidth: "1800px", // Limit width on larger screens
+          maxWidth: "4000px", // Limit width on larger screens
           textAlign: "left",
         }}
       >
         <p>
-          I am currently an undergraduate Computer Science student at AUT,
+          I am recent graduate of a Bachelors of Computer and Information Sciences at AUT,
           specializing in Software Development. Before embarking on my academic
           journey, I gained valuable experience across different sectors,
           including hospitality and retail. These roles have equipped me with a

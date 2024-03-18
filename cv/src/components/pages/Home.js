@@ -1,6 +1,6 @@
 import React from "react";
 
-import Education from "../Education";
+import Education from "../pages/Education";
 import Skills from "../Skills";
 import Projects from "../pages/Projects";
 import About from "../pages/About";

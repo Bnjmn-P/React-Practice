@@ -1,20 +1,33 @@
 import React from "react";
-
-import { Link } from "react-router-dom";
 import "./Navbar.css"; // Create this CSS file for styling
 
 const Navbar = () => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects");
+    projectsSection.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToEducation = () => {
+    const educationSection = document.getElementById("education");
+    educationSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <nav className="navbar">
       <ul className="navbar-list">
         <li>
-          <Link to="/home">Home</Link>
+          <button onClick={scrollToAbout}>About</button>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <button onClick={scrollToProjects}>Projects</button>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <button onClick={scrollToEducation}>Education</button>
         </li>
       </ul>
     </nav>
