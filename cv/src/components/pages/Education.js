@@ -2,7 +2,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <section className="education">
+    <section id = "education" className="education">
       <h2 className="section-title">Education</h2>
       <div className="education-item">
         <h3 className="education-title">
@@ -11,7 +11,7 @@ const Education = () => {
         <p className="education-institution">
           Auckland University of Technology
         </p>
-        <p className="education-date">2020 - 2023</p>
+        <p className="education-date">2020 - 2024</p>
       </div>
       <div className="education-item">
         <h3 className="education-title">

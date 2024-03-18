@@ -24,10 +24,10 @@ const Navbar = () => {
           <button onClick={scrollToAbout}>About</button>
         </li>
         <li>
-          <button onClick={scrollToProjects}>Projects</button>
+          <button onClick={scrollToEducation}>Education</button>
         </li>
         <li>
-          <button onClick={scrollToEducation}>Education</button>
+          <button onClick={scrollToProjects}>Projects</button>
         </li>
       </ul>
     </nav>
