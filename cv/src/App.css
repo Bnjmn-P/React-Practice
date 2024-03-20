@@ -1,32 +1,40 @@
-/* App.css */
-
 body {
-  @apply font-sans bg-gray-100 m-0;
+  font-family: sans-serif; /* Apply font-sans */
+  background-color: #f7fafc; /* bg-gray-100 equivalent */
+  margin: 0;
 }
 
 a:link {
-  @apply text-teal-500 hover:text-teal-600; /* Updated link color and hover effect */
+  color: #38a169; /* text-teal-500 equivalent */
 }
-  
+
 a:hover {
-  @apply text-pink-500; /* Keeping hover effect */
+  color: #d53f8c; /* text-pink-500 equivalent */
 }
 
 .App {
-  @apply text-center p-20;
+  text-align: center; /* Apply text-center */
+  padding: 5rem; /* 80px */
 }
 
 .App-header {
-  @apply bg-gradient-to-b from-blue-800 to-blue-600 min-h-screen flex flex-col items-center justify-center text-white; /* Added gradient background */
-  @apply text-2xl; /* Increased header text size */
+  background: linear-gradient(to bottom, #1a365d, #4a5568); /* bg-gradient-to-b from-blue-800 to-blue-600 equivalent */
+  min-height: 100vh; /* min-h-screen equivalent */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* items-center equivalent */
+  justify-content: center; /* justify-center equivalent */
+  color: #fff;
+  font-size: 2rem; /* text-2xl equivalent */
 }
+
 
 /* Header.css */
 
 .header {
   background-color: #1a365d; /* blue-800 equivalent */
   padding: 1.25rem; /* 20px */
-  margin-top: 5%;
+  margin-top: 0%;
   margin-left: 5%;
   text-align: center;
 }
@@ -143,27 +151,36 @@ a:hover {
 }
 
 #projects {
-  @apply max-w-screen-lg mx-auto p-5;
+  max-width: 64rem; /* 1024px */
+  margin: 0 auto; /* Center horizontally */
+  padding: 1.25rem; /* 20px */
 }
 
 #projects h1 {
-  @apply text-3xl mb-3 text-blue-800; /* Increased about section title text size */
+  font-size: 1.875rem; /* 30px */
+  margin-bottom: 0.75rem; /* 12px */
+  color: #1a365d; /* blue-800 equivalent */
 }
 
 #projects h2 {
-  @apply text-2xl mb-3 text-gray-800; /* Increased about section subtitle text size and adjusted color */
+  font-size: 1.5rem; /* 24px */
+  margin-bottom: 0.75rem; /* 12px */
+  color: #4a5568; /* gray-800 equivalent */
 }
 
 #projects p {
-  @apply text-lg leading-7 mb-5; /* Adjusted about section paragraph text size and line height */
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75; /* 28px */
+  margin-bottom: 1.25rem; /* 20px */
   text-align: justify;
 }
 
 @media (max-width: 768px) {
   #projects {
-    @apply p-3; /* Increased padding for smaller screens */
+    padding: 0.75rem; /* 12px */
   }
 }
+
 
 .collapse-button {
   justify-content: left;
