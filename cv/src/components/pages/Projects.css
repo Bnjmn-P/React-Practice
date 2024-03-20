@@ -3,15 +3,16 @@
 }
 
 .sidebar {
-  flex: 0 0 30%; /* Set the width of the sidebar */
+  flex: 0 5 30%; /* Set the width of the sidebar */
 }
 
 .content {
-  flex: 1; /* Fill the remaining space */
+  flex: 2; 
 }
 
 .collapse-button.active {
-  /* Add styles for active buttons if needed */
+  background-color: #150d83
+
 }
 
 .video-container {
@@ -24,4 +25,16 @@
 .video-container iframe {
   max-width: 100%;
   max-height: 100%;
+}
+
+.project-content {
+  overflow-y: auto; /* Enable vertical scrollbar */
+  max-height: 400px; /* Set max height for scrollable area */
+  padding: 10px; /* Add padding to improve appearance */
+  background-color: #fefeff;
+}
+
+.no-project-selected {
+  text-align: center;
+  padding: 20%;
 }

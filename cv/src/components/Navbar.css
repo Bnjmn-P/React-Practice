@@ -2,16 +2,24 @@
   background-color: #ffffff; /* Set your desired background color */
   padding: 10px 20px; /* Adjust padding as needed */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  position: fixed;
+  top: 5%;
+  left: 0; /* Position navbar at the left side of the screen */
+  height: 90%; /* Make navbar occupy full height of the viewport */
+  display: flex;
+  flex-direction: column; /* Make navbar items appear vertically */
+  justify-content: flex-start; /* Align navbar items to the top */
+  z-index: 1000; /* Set z-index to ensure navbar is above other content */
 }
 
 .navbar-list {
   list-style-type: none;
   padding: 0;
-  display: flex;
+  margin-top: 50%; /* Add margin from the top */
 }
 
 .navbar-list li {
-  margin: 0 10px; /* Adjust spacing between navbar items */
+  margin: 100px 0; /* Adjust spacing between navbar items */
 }
 
 .navbar-list li a {
@@ -24,4 +32,3 @@
 .navbar-list li a:hover {
   color: #007bff; /* Set your desired hover color */
 }
-

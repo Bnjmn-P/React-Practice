@@ -63,7 +63,7 @@ const Projects = () => {
       </div>
       <div className="content">
         {activeCollapse === "R and D Project" && (
-          <div>
+          <div className="project-content">
             <p>
               As part of my final year at Auckland University of Technology
               (AUT), I am part of a team tasked with examining how the faculty
@@ -125,7 +125,7 @@ const Projects = () => {
         )}
 
         {activeCollapse === "The Lost Relics" && (
-          <div>
+          <div className="project-content">
             <p>
               For this project, I served as the Scrum Master for a five-member
               team tasked with developing a 2D platforming game using the Unity
@@ -189,7 +189,7 @@ const Projects = () => {
         )}
 
         {activeCollapse === "Flora Friends" && (
-          <div>
+          <div className="project-content">
             <p>
               This year, I undertook the creation of a WordPress app centered on
               a fictitious Kickstarter project. The primary goal was to engage
@@ -214,7 +214,7 @@ const Projects = () => {
         )}
 
         {activeCollapse === "Flatties" && (
-          <div>
+         <div className="project-content">
             <p>
               I'm currently involved in a collaborative software project with
               two other developers, and we're using the MERN stack (MongoDB,
@@ -236,6 +236,11 @@ const Projects = () => {
             >
               Flatties GitHub
             </a>
+          </div>
+        )}
+        {activeCollapse === null && (
+          <div className="no-project-selected">
+            Select a project to view details.
           </div>
         )}
       </div>
