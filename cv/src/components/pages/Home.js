@@ -8,7 +8,6 @@ import About from "../pages/About";
 function Home() {
   return (
     <section id="home">
-      <h1>About Me</h1>
       <About />
       <Education />
       <Projects />

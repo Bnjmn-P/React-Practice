@@ -23,6 +23,7 @@ const About = () => {
           textAlign: "left",
         }}
       >
+        <h1>About Me</h1>
         <p>
           I am recent graduate of a Bachelors of Computer and Information Sciences at AUT,
           specializing in Software Development. Before embarking on my academic

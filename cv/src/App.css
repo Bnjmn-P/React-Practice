@@ -24,50 +24,77 @@ a:hover {
 /* Header.css */
 
 .header {
-  @apply bg-blue-800 p-5 text-center;
+  background-color: #1a365d; /* blue-800 equivalent */
+  padding: 1.25rem; /* 20px */
+  margin-top: 5%;
+  margin-left: 5%;
+  text-align: center;
 }
 
 .header-content {
-  @apply max-w-screen-md mx-auto;
+  max-width: 48rem; /* 768px */
+  margin: 0 auto; /* Center horizontally */
 }
 
 .header-title {
-  @apply text-4xl mb-2 font-serif text-white; /* Increased title text size */
+  font-size: 2.25rem; /* 36px */
+  margin-bottom: 0.5rem; /* 8px */
+  font-family: serif;
+  color: #fff;
 }
 
 .header-subtitle {
-  @apply text-2xl my-2 font-serif text-white; /* Increased subtitle text size */
+  font-size: 1.5rem; /* 24px */
+  margin-bottom: 1rem; /* 16px */
+  font-family: serif;
+  color: #fff;
 }
 
 .header-contact p {
-  @apply mb-2 text-white;
+  margin-bottom: 0.5rem; /* 8px */
+  color: #fff;
 }
+
 
 /* Education.css */
 
 .education {
-  @apply mt-5;
+  margin-top: 5%;
+  margin-left: 5%; /* Apply margin-left of 20% */
 }
 
 .section-title {
-  @apply text-3xl mb-5 text-blue-800; /* Increased section title text size */
+  font-size: 3rem;
+  margin-bottom: 1.25rem; /* 20px */
+  color: #1a365d; /* blue-800 equivalent */
 }
 
 .education-item {
-  @apply mb-8 border-2 border-blue-800 rounded-lg p-4 bg-white shadow-md; /* Added box shadow */
+  margin-bottom: 2rem; /* 32px */
+  border: 2px solid #1a365d; /* blue-800 equivalent */
+  border-radius: 0.5rem; /* 8px */
+  padding: 1rem; /* 16px */
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
 }
 
 .education-title {
-  @apply text-2xl mb-1 text-gray-800; /* Increased education title text size and adjusted margin */
+  font-size: 1.5rem; /* 24px */
+  margin-bottom: 0.5rem; /* 8px */
+  color: #4a5568; /* gray-800 equivalent */
 }
 
 .education-institution {
-  @apply text-lg mb-2 text-gray-700; /* Increased institution text size */
+  font-size: 1.25rem; /* 20px */
+  margin-bottom: 0.75rem; /* 12px */
+  color: #4a5568; /* gray-700 equivalent */
 }
 
 .education-date {
-  @apply text-base text-gray-700;
+  font-size: 1rem; /* 16px */
+  color: #4a5568; /* gray-700 equivalent */
 }
+
 
 /* Skills.css */
 
@@ -84,21 +111,30 @@ a:hover {
 }
 
 #about {
-  @apply max-w-screen-lg mx-auto p-5;
+  margin-top: 5%;
+  margin-left: 5%;
+  padding: 1.25rem; /* 20px */
 }
 
 #about h1 {
-  @apply text-3xl mb-3 text-blue-800; /* Increased about section title text size */
+  font-size: 1.875rem; /* 30px */
+  margin-bottom: 0.75rem; /* 12px */
+  color: #1a365d; /* blue-800 equivalent */
 }
 
 #about h2 {
-  @apply text-2xl mb-3 text-gray-800; /* Increased about section subtitle text size and adjusted color */
+  font-size: 1.5rem; /* 24px */
+  margin-bottom: 0.75rem; /* 12px */
+  color: #4a5568; /* gray-800 equivalent */
 }
 
 #about p {
-  @apply text-lg leading-7 mb-5; /* Adjusted about section paragraph text size and line height */
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75; /* 28px */
+  margin-bottom: 1.25rem; /* 20px */
   text-align: justify;
 }
+
 
 @media (max-width: 768px) {
   #about {
@@ -153,4 +189,42 @@ a:hover {
   display: none;
 }
 
+.navbar {
+  background-color: #ffffff; /* Set your desired background color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  position: fixed;
+  top: 5%;
+  left: 0; /* Position navbar at the left side of the screen */
+  height: 90%; /* Make navbar occupy full height of the viewport */
+  display: flex;
+  flex-direction: column; /* Make navbar items appear vertically */
+  justify-content: flex-start; /* Align navbar items to the top */
+  z-index: 1000; /* Set z-index to ensure navbar is above other content */
+}
 
+.navbar-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 50%; /* Add margin from the top */
+}
+
+.navbar-list li {
+  margin: 100px 0; /* Adjust spacing between navbar items */
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  color: #333333; /* Set your desired text color */
+  font-weight: bold; /* Adjust font weight as needed */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.navbar-list li a:hover {
+  color: #007bff; /* Set your desired hover color */
+}
+
+.content-container {
+  margin-left: 250px; /* Adjust the width as per your navbar width */
+  padding: 20px; /* Adjust padding as needed */
+}
