@@ -1,6 +1,6 @@
 .navbar {
   background-color: #ffffff; /* Set your desired background color */
-  padding: 10px 20px; /* Adjust padding as needed */
+  padding: 10px 10px; /* Adjust padding as needed */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   position: fixed;
   top: 5%;
@@ -30,5 +30,5 @@
 }
 
 .navbar-list li a:hover {
-  color: #007bff; /* Set your desired hover color */
+  color: #ff00aa; /* Set your desired hover color */
 }
